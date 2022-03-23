@@ -4,19 +4,50 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Grafica studio A - Lonas</title>
+	<link rel="stylesheet" href="../css/bootstrap.css">
 	<link rel="stylesheet" href="../css/estilo.css">
 </head>
 <body class="cuerpogrid">
-	<nav class="nav bot">
-	   		<a href="../index.html"> <img src="../img/logo.png" alt="logo" class="nav__img--tamaño"> </a>
-	   		<ul class="nav__ul">
-	   			<li><a href="../index.html">Inicio</a> </li>
-	   			<li><a href="ploteados.html">Ploteados</a></li>
-	   			<li><a href="lonas.html">Lonas</a></li>
-	    		<li><a href="insumos.html">Insumos</a></li>
-	   			<li><a href="contacto.html">Contacto</a></li>
-	   		</ul>
-	  	</nav> 
+		<!-- empieza la nav bootstrap -->
+<nav class="navbar navbar-expand-lg navbar-dark nav" id="bgcolor">
+  	<div class="container-fluid"> 
+  		<a href="index.html">
+    	   <img src="../img/logo.png" class="logo" alt="logo">
+    	</a>
+    	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      	<span class="navbar-toggler-icon"></span>
+    	</button>
+    	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+      		<ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="lista">
+        		<li class="nav-item">
+          			<a class="nav-link" href="../index.html">inico</a>
+        		</li>
+        		<li class="nav-item">
+          			<a class="nav-link" href="ploteados.html">ploteados</a>
+        		</li>
+        		<li class="nav-item">
+          			<a class="nav-link" href="lonas.html">lonas</a>
+        		</li>
+        		<li class="nav-item">
+          			<a class="nav-link" href="insumos.html">insumos</a>
+        		</li>
+        		<li class="nav-item">
+          			<a class="nav-link" href="contacto.html">contacto</a>
+        		</li>
+          			</a>
+          			<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            			<li><a class="dropdown-item" href="#">Action</a></li>
+            			<li><a class="dropdown-item" href="#">Another action</a></li>
+           				<li><hr class="dropdown-divider"></li>
+            			<li><a class="dropdown-item" href="#">Something else here</a></li>
+          			</ul>
+                </li>
+            </ul>
+            
+        </div>
+    </div>
+</nav>
+	  	<!-- fin de la nav bootstrap -->
 	<main class="contenido main">
 		<section class="lonas">
 			<article class="lonas__article display">
@@ -37,5 +68,6 @@
 		<a href="https://instagram.com" target="_blank"><img src="../img/ig.png" alt="Instagram" class="footer__img"></a>
 		<a href="https://twitter.com" target="_blank"><img src="../img/tw.png" alt="twitter"></a>
 	</footer>
+	<script src="js/bootstrap.js"></script>
 </body>
 </html>

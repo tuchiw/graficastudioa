@@ -4,20 +4,50 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Grafica studio A - Inicio</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/estilo.css">
 </head>
 <body class="cuerpogrid">
-		<!-- empieza la nav -->
-		<nav class="nav bot">
-	   		<a href="index.html"> <img src="img/logo.png" alt="logo" class="nav__img--tamaño animacion"> </a>
-	   		<ul class="nav__ul">
-	   			<li><a href="index.html">Inicio</a> </li>
-	   			<li><a href="pages/ploteados.html">Ploteados</a></li>
-	   			<li><a href="pages/lonas.html">Lonas</a></li>
-	    		<li><a href="pages/insumos.html">Insumos</a></li>
-	   			<li><a href="pages/contacto.html">Contacto</a></li>
-	   		</ul>
-	  	</nav> 
+		<!-- empieza la nav bootstrap -->
+<nav class="navbar navbar-expand-lg navbar-dark nav" id="bgcolor">
+  	<div class="container-fluid"> 
+  		<a href="index.html">
+    	   <img src="img/logo.png" class="logo" alt="logo">
+    	</a>
+    	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      	<span class="navbar-toggler-icon"></span>
+    	</button>
+    	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+      		<ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="lista">
+        		<li class="nav-item">
+          			<a class="nav-link" href="index.html">inico</a>
+        		</li>
+        		<li class="nav-item">
+          			<a class="nav-link" href="pages/ploteados.html">ploteados</a>
+        		</li>
+        		<li class="nav-item">
+          			<a class="nav-link" href="pages/lonas.html">lonas</a>
+        		</li>
+        		<li class="nav-item">
+          			<a class="nav-link" href="pages/insumos.html">insumos</a>
+        		</li>
+        		<li class="nav-item">
+          			<a class="nav-link" href="pages/contacto.html">contacto</a>
+        		</li>
+          			</a>
+          			<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            			<li><a class="dropdown-item" href="#">Action</a></li>
+            			<li><a class="dropdown-item" href="#">Another action</a></li>
+           				<li><hr class="dropdown-divider"></li>
+            			<li><a class="dropdown-item" href="#">Something else here</a></li>
+          			</ul>
+                </li>
+            </ul>
+            
+        </div>
+    </div>
+</nav>
+	  	<!-- fin de la nav bootstrap -->
 	<header class="encabezado header">
 
 	   <img src="img/banner22.jpg" alt="banner" class="encabezado__banner">
@@ -29,14 +59,36 @@
 				<h1>¿Quienes somos?</h1>
 				<p >Somos una empresa con mas de 20 años de trayectoria en la industria grafica Argentina, contamos con un conjunto de diseñadores que dirigen su esfuerzo para lograr un desempeño optimo y un grupo de operarios altamente calificados para la colocacion de cada proyecto deseado por los clientes</p>
 			</article>
-			<div class="contenido__img">
-				<img src="img/plot 1.jpg" alt="imegen1" class="contenido__img1 contenido__img--margin">
-				<img src="img/plot 2.jpg" alt="imagen2" class="contenido__img2 contenido__img--margin">
-				<img src="img/plot4.jpg" alt="imagen3" class="contenido__img3">
-				<img src="img/ponlon1.jpg" alt="imagen4" class="contenido__img4 contenido__img--margin">
-				<img src="img/ponlon2.jpg" alt="imagen5" class="contenido__img5 contenido__img--margin">
-				<img src="img/ponlon3.jpg" alt="imagen6" class="contenido__img6 contenido__img--margin">
-			</div>
+			<!-- empieza carousel botstrap -->
+			<article class="py-5">
+				<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/carrusel2.jpg" class="d-block w-100" alt="carrusel imagen1">
+    </div>
+    <div class="carousel-item">
+      <img src="img/carrusel3.jpg" class="d-block w-100" alt="carrusel imagen2">
+    </div>
+    <div class="carousel-item">
+      <img src="img/carrusel4.jpg" class="d-block w-100" alt="carrusel imagen3">
+    </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Atras</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Siguiente</span>
+  </button>
+</div>
+			</article>
 		</section>
 	</main>
 	   <!-- pie de pagina -->
@@ -47,5 +99,6 @@
 		<a href="https://instagram.com" target="_blank"><img src="img/ig.png" alt="Instagram" class="footer__img"></a>
 		<a href="https://twitter.com" target="_blank"><img src="img/tw.png" alt="twitter"></a>
 	</footer>
+	<script src="js/bootstrap.js"></script>
 </body>
 </html>

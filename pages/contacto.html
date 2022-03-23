@@ -4,46 +4,90 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Grafica studio A - Contacto</title>
+	<link rel="stylesheet" href="../css/bootstrap.css">
 	<link rel="stylesheet" href="../css/estilo.css">
 </head>
 <body class="cuerpogrid">
-			<!-- empieza la nav -->
-		<nav class="nav bot">
-	   		<a href="../index.html"> <img src="../img/logo.png" alt="logo" class="nav__img--tamaño"> </a>
-	   		<ul class="nav__ul">
-	   			<li><a href="../index.html">Inicio</a> </li>
-	   			<li><a href="ploteados.html">Ploteados</a></li>
-	   			<li><a href="lonas.html">Lonas</a></li>
-	    		<li><a href="insumos.html">Insumos</a></li>
-	   			<li><a href="contacto.html">Contacto</a></li>
-	   		</ul>
-	  	</nav> 
+		<!-- empieza la nav bootstrap -->
+<nav class="navbar navbar-expand-lg navbar-dark nav" id="bgcolor">
+  	<div class="container-fluid"> 
+  		<a href="index.html">
+    	   <img src="../img/logo.png" class="logo" alt="logo">
+    	</a>
+    	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      	<span class="navbar-toggler-icon"></span>
+    	</button>
+    	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+      		<ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="lista">
+        		<li class="nav-item">
+          			<a class="nav-link" href="../index.html">inico</a>
+        		</li>
+        		<li class="nav-item">
+          			<a class="nav-link" href="ploteados.html">ploteados</a>
+        		</li>
+        		<li class="nav-item">
+          			<a class="nav-link" href="lonas.html">lonas</a>
+        		</li>
+        		<li class="nav-item">
+          			<a class="nav-link" href="insumos.html">insumos</a>
+        		</li>
+        		<li class="nav-item">
+          			<a class="nav-link" href="contacto.html">contacto</a>
+        		</li>
+          			</a>
+          			<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            			<li><a class="dropdown-item" href="#">Action</a></li>
+            			<li><a class="dropdown-item" href="#">Another action</a></li>
+           				<li><hr class="dropdown-divider"></li>
+            			<li><a class="dropdown-item" href="#">Something else here</a></li>
+          			</ul>
+                </li>
+            </ul>
+            
+        </div>
+    </div>
+</nav>
+	  	<!-- fin de la nav bootstrap -->
 	
 	<main class="contenido main">
    		<section class="contacto">
 		 <div class="contacto__div">
 		  	<h1> Contacto </h1>
 		   <h2>Pedi tus insumos:</h2>
-		 	<form action="" class="contacto__form">
-		 		<fieldset>
-		 			<legend>Tus Datos</legend>
-		 			<label for="nombre">Nombre y Apellido</label>
-		 			<input type="text" name="nombre" id="nombre">
-		 			<label for="email">Email</label>
-		 			<input type="email" name="email" id="email">
-		 			<label for="numero">Numero de telefono</label>
-		 			<input type="number" name="numero" id="numero">
-		 			<label for="producto">producto</label>
-		 			<input type="text" name="producto" id="producto">
-		 			<label for="numero">unidades</label>
-		 			<input type="number" name="unidades" id="numero">
-		 			<label for="color">color</label>
-		 			<input type="text" name="color" id="color">
-		 		</fieldset>
-		 		<label for="mensaje">Ingresá tu ubicacion</label>
-		 		<textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
-		 		<input type="submit" value="Enviar">
-		 	</form>
+		      <!-- empieza forms bootstrap -->
+	<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label"></label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="E-mail">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label"></label>
+  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="telefono">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label"></label>
+  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="producto">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label"></label>
+  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="color">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label"></label>
+  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="cantidad">
+</div>
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label"></label>
+  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="direccion">
+</div>
+
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">consulta</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+</div>
+	<input type="submit" class="boton">
+		 	<!-- termina forms bootstrap -->
 		 </div>
 		</section>
 	</main>
@@ -54,5 +98,7 @@
 		<a href="https://instagram.com" target="_blank"><img src="../img/ig.png" alt="Instagram" class="footer__img"></a>
 		<a href="https://twitter.com" target="_blank"><img src="../img/tw.png" alt="twitter"></a>
 	</footer>
+	<script src="js/bootstrap.js"></script>
+</body>
 </body>
 </html>
