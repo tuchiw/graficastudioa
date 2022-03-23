@@ -341,7 +341,7 @@ body {
 }
 
 .boton{
-    width: 30rem;
+    width: 20em;
     height: 5rem;
     margin: 1rem 0;
     border: none;
@@ -368,6 +368,7 @@ body {
 
 .footer__img {
 	margin: 0.2rem 3rem ;
+}
 
 
 /* mediaquery */
@@ -376,177 +377,15 @@ body {
 
  /* index */
 
- .contenido__img1{
- 	width: 23rem;
- 	height: auto
- }
-
- .contenido__img2{
- 	width: 23rem;
- 	height: auto
- }
-
-
-.contenido__img3{
-	width: 23rem;
- 	height: auto
-}
-
-.contenido__img4{
-	width: 23rem;
- 	height: auto
-}
-
-.contenido__img5{
-	width: 23rem;
- 	height: auto
-}
-
-.contenido__img5{
-	width: 23rem;
- 	height: auto
-}
-
-.contenido__img6{
-	width: 23rem;
- 	height: auto
-}
-
 
 @media only screen and (min-width: 1200px){
- 	.nav{
- 		flex-direction: row;
- 		justify-content: space-between;
- 	}
-}
+
 
 @media only screen and (min-width: 1284px){
 
 
- /* index */
-
- .contenido__img1{
- 	width: 23rem;
- 	height: auto
- }
-
- .contenido__img2{
- 	width: 23rem;
- 	height: auto
- }
-
-
-.contenido__img3{
-	width: 23rem;
- 	height: auto
-}
-
-.contenido__img4{
-	width: 23rem;
- 	height: auto
-}
-
-.contenido__img5{
-	width: 23rem;
- 	height: auto
-}
-
-.contenido__img5{
-	width: 23rem;
- 	height: auto
-}
-
-.contenido__img6{
-	width: 23rem;
- 	height: auto
-}
-
 @media only screen and (min-width: 1286px){
 
 
- /* index */
-
- .contenido__img1{
- 	width: 31rem;
- 	height: auto
- }
-
- .contenido__img2{
- 	width: 31rem;
- 	height: auto
- }
-
-
-.contenido__img3{
-	width: 31rem;
- 	height: auto
-}
-
-.contenido__img4{
-	width: 31rem;
- 	height: auto
-}
-
-.contenido__img5{
-	width: 31rem;
- 	height: auto
-}
-
-.contenido__img5{
-	width: 31rem;
- 	height: auto
-}
-
-.contenido__img6{
-	width: 31rem;
- 	height: auto
-}
-
 @media only screen and (min-width: 1680px){
-	.cuerpogrid{
-		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: auto;
-		grid-template-areas: "bot bot" "header header" "main main" "pie pie"
-	}
-
- /* index */
-
- .contenido__img1{
- 	width: 42rem;
- 	height: auto
- }
-
- .contenido__img2{
- 	width: 42rem;
- 	height: auto
- }
-
-
-.contenido__img3{
-	width: 42rem;
- 	height: auto
-}
-
-.contenido__img4{
-	width: 42rem;
- 	height: auto
-}
-
-.contenido__img5{
-	width: 42rem;
- 	height: auto
-}
-
-.contenido__img5{
-	width: 42rem;
- 	height: auto
-}
-
-.contenido__img6{
-	width: 42rem;
- 	height: auto
-}
-
-
-
 
